@@ -13,7 +13,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         <FeedbackOptionsButton
           type="button"
           value={el}
-          onClick={onLeaveFeedback}
+          onClick={evt => onLeaveFeedback(el)}
         >
           {el[0].toUpperCase() + el.slice(1, el.length)}
         </FeedbackOptionsButton>
